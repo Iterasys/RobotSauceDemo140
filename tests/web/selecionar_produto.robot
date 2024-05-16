@@ -6,7 +6,7 @@ Test Teardown    Close Browser  # No final, fecha o navegador
 *** Variables ***
 ${url}    https://www.saucedemo.com/
 ${browser}    Chrome
-${timeout}    5000ms
+${timeout}    10000ms
 
 *** Test Cases ***
 # frases --> Keywords
@@ -39,7 +39,7 @@ Selecionar Sauce Labs Backpack Login com Enter
 Dado que acesso o site SauceDemo
     Open Browser    url=${url}    browser=${browser}
     Maximize Browser Window
-    Set Browser Implicit Wait    10000ms
+    Set Browser Implicit Wait    5000ms
     Wait Until Element Is Visible    css=.login_logo    ${timeout}
     
     
