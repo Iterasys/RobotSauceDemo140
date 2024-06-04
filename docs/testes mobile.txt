@@ -46,4 +46,14 @@ Configuração inicial
 7 - Criar e executar um perfil de teste no Appium Inspector
 8 - Inspecionar o app - descobrir os seletores
 9 - Exportar o script ou seletores
-10 - Programar
+10 - Importar, ajustar e programar complementos
+
+
+
+Configuração de armazenamento das seriais (Sauce Access Key)
+
+Temporária - Qualquer usuário consegue utilizar
+Set-Item -Path Env:\NomeDaVariavel -Value 'Valor'
+
+Permanente - Apenas para Administradores da máquina
+[Environment]::SetEnvironmentVariable('NomeDaVariavel','Valor')
